@@ -2,7 +2,7 @@ package phoneConvert;
 
 import java.util.Scanner;
 
-public class Phone
+public class PhoneLoop
 {
 
    public static void main(String[] args)
@@ -17,12 +17,14 @@ public class Phone
       
       phoneAlpha = input.next();
       phoneAlpha = phoneAlpha.toUpperCase();
-
-      if (phoneAlpha.length() != 7)
+      
+      if (phoneAlpha.length() > 7);
       {
          phoneAlpha = phoneAlpha.substring(0, 7);
       }
 
+
+      
       for (int i = 0; i < phoneAlpha.length(); i++)
       {
          workChar = phoneAlpha.substring(i, i + 1);
